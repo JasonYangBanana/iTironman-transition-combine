@@ -14,7 +14,7 @@ body{
             color: #FFFFFF;
             border-radius: 10px;
             text-align: center;
-            &:hover+.box1{
+            &:hover~.box1{
                 transform: rotate(720deg);
                 left: 50%;
                 background-color: green;
