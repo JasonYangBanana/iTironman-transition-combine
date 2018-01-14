@@ -1,0 +1,92 @@
+body {
+  background-color: #909090; }
+  body .container {
+    margin: 10px auto 10px;
+    width: 100vw;
+    height: 100vh; }
+    body .container .hover {
+      width: 100px;
+      height: 24px;
+      top: 48%;
+      left: 48%;
+      background-color: pink;
+      position: absolute;
+      color: #FFFFFF;
+      border-radius: 10px;
+      text-align: center; }
+      body .container .hover:hover + .box1 {
+        -webkit-transform: rotate(720deg);
+        -ms-transform: rotate(720deg);
+        transform: rotate(720deg);
+        left: 50%;
+        background-color: green;
+        border-radius: 50px; }
+      body .container .hover:hover ~ .box2 {
+        -webkit-transform: rotate(720deg);
+        -ms-transform: rotate(720deg);
+        transform: rotate(720deg);
+        left: 90%;
+        height: 0;
+        width: 0;
+        border-color: red transparent transparent transparent;
+        border-style: solid solid solid solid;
+        border-width: 45px;
+        border-radius: 0;
+        background-color: transparent; }
+      body .container .hover:hover ~ .box5 {
+        -webkit-transform: rotate(-720deg);
+        -ms-transform: rotate(-720deg);
+        transform: rotate(-720deg);
+        left: 90%;
+        top: 50%;
+        height: 25px;
+        width: 25px;
+        border-color: transparent transparent transparent transparent;
+        border-style: solid solid solid solid;
+        border-width: 45px;
+        border-radius: 0;
+        background-color: yellow; }
+    body .container .box1 {
+      width: 50px;
+      height: 50px;
+      background-color: blue;
+      position: absolute;
+      left: 1%;
+      -webkit-transition: all 4s ease-in-out;
+      -o-transition: all 4s ease-in-out;
+      transition: all 4s ease-in-out; }
+    body .container .box2 {
+      width: 50px;
+      height: 50px;
+      background-color: green;
+      position: absolute;
+      left: 50%;
+      -webkit-transition: all 4s ease-in-out 4s;
+      -o-transition: all 4s ease-in-out 4s;
+      transition: all 4s ease-in-out 4s;
+      border-radius: 50px; }
+    body .container .box3 {
+      width: 50px;
+      height: 50px;
+      background-color: green;
+      position: absolute;
+      left: 50%; }
+    body .container .box4 {
+      width: 100px;
+      height: 50px;
+      background-color: red;
+      position: absolute;
+      left: 90%;
+      top: 1%; }
+    body .container .box5 {
+      position: absolute;
+      height: 0;
+      width: 0;
+      border-color: red transparent transparent transparent;
+      border-style: solid solid solid solid;
+      border-width: 45px;
+      left: 90%;
+      top: 1%;
+      -webkit-transition: all 4s ease-in-out 8s;
+      -o-transition: all 4s ease-in-out 8s;
+      transition: all 4s ease-in-out 8s; }

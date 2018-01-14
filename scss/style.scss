@@ -1,0 +1,91 @@
+body{
+    background-color: #909090;
+    .container{
+        margin: 10px auto 10px;
+        width: 100vw;
+        height: 100vh;
+        .hover{
+            width: 100px;
+            height: 24px;
+            top: 48%;
+            left: 48%;
+            background-color: pink;
+            position: absolute;
+            color: #FFFFFF;
+            border-radius: 10px;
+            text-align: center;
+            &:hover+.box1{
+                transform: rotate(720deg);
+                left: 50%;
+                background-color: green;
+                border-radius: 50px;    
+            }
+            &:hover~.box2{
+                transform: rotate(720deg);
+                left: 90%;
+                height: 0;
+                width: 0;
+                border-color: red transparent transparent transparent;
+                border-style: solid solid solid solid;
+                border-width: 45px;
+                border-radius: 0; 
+                background-color: transparent;
+            }
+            &:hover~.box5{
+                transform: rotate(-720deg);
+                left: 90%;
+                top: 50%;
+                height: 25px;
+                width: 25px;
+                border-color: transparent transparent transparent transparent;
+                border-style: solid solid solid solid;
+                border-width: 45px;
+                border-radius: 0; 
+                background-color: yellow;
+            }
+        }
+        .box1{
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+            position: absolute;
+            left: 1%;
+            transition: all 4s ease-in-out;
+        }
+        .box2{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            position: absolute;
+            left: 50%;
+            transition: all 4s ease-in-out 4s;
+            border-radius: 50px; 
+        }
+        .box3{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            position: absolute;
+            left: 50%;
+        }
+        .box4{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            left: 90%;
+            top: 1%;
+        }
+        .box5{
+            position: absolute;
+            height: 0;
+            width: 0;
+            border-color: red transparent transparent transparent;
+            border-style: solid solid solid solid;
+            border-width: 45px;
+            left: 90%;
+            top: 1%;
+            transition: all 4s ease-in-out 8s;
+        }
+    }
+}
